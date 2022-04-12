@@ -1,11 +1,10 @@
 [![RuneJS Discord Server](https://img.shields.io/discord/678751302297059336?label=RuneJS%20Discord&logo=discord)](https://discord.gg/5P74nSh)
 
+[![RuneJS](https://i.imgur.com/QSXNzwC.png)](https://github.com/runejs/)
 
-![RuneJS](https://i.imgur.com/pmkdSfc.png)
+# ESLint Config
 
-# @runejs/eslint-config
-
-A standard set of ESLint rules for all RuneJS related projects.
+A standard set of ESLint rules for all RuneJS projects.
 
 ## Installation
 
@@ -25,19 +24,9 @@ Create a `.eslintrc` file in your project's root directory or add an entry for `
 
 ```
 {
-    "extends": [ "@runejs/eslint-config" ],
-}
-```
-
-
-Don't forget to include your project's specific `parserOptions` in the file:
-
-```diff
-{
-    "extends": [ "@runejs/eslint-config" ],
+    "extends": [ "@runejs" ],
     "parserOptions": {
         "project": "./tsconfig.json"
     }
 }
 ```
-

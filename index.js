@@ -47,6 +47,20 @@ module.exports = {
                 [ "instance-get", "instance-set" ], // = ["public-instance-get", "protected-instance-get", "private-instance-get"],["public-instance-set", "protected-instance-set", "private-instance-set"]
             ] }
         ],
+        "@typescript-eslint/explicit-member-accessibility": [
+            "error",
+            {
+                "accessibility": "no-public"
+            }
+        ],
+        "@typescript-eslint/keyword-spacing": [ 
+            "error", 
+            { 
+                "after": true,
+                "before": true
+            }
+        ],
+        "keyword-spacing": "off",
         "@typescript-eslint/promise-function-async": "error",
         "@typescript-eslint/quotes": [
             "error",
